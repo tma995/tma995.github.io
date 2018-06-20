@@ -1,10 +1,8 @@
 ---
 layout: post
-title:  "Welcome!"
-category: blog
-
+title:  Welcome!
 ---
 
-Hello World!
+### Hello World!
 
 Hello...
