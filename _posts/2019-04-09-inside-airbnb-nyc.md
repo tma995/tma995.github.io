@@ -3,6 +3,8 @@ layout: default
 title:  3 Tips of Booking NYC Airbnb Homes for Solo Adventurers
 ---
 
+{{ page.date | date: '%Y-%m-%d' }}
+
 <h1>{{ page.title }}</h1>
 
 For those who love traveling around the world and exploring new things, New York City should be, without doubt, among the top lines in your to-do list. You will find tons of fun and countless surprises in this famous metropolitan city once you get there.
