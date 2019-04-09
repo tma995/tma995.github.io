@@ -7,7 +7,7 @@ title:  3 Tips of Booking NYC Airbnb Homes for Solo Adventurers
 
 <h1>{{ page.title }}</h1>
 
-![nyc_map5](img/nyc_map5.png)
+![nyc_map5](https://github.com/tma995/tma995.github.io/raw/master/_posts/img/nyc_map5.png)
 
 For those who love traveling around the world and exploring new things, New York City should be, without doubt, among the top lines in your to-do list. You will find tons of fun and countless surprises in this famous metropolitan city once you get there.
 
@@ -18,3 +18,14 @@ However, too many choices could be a disaster sometimes. So today I will analyze
 * What are the differences of Airbnb Homes among boroughs of New York?
 * How much time in advance is best to book an Airbnb before going to NYC?
 * What are the key features that affects NYC Airbnb prices?
+
+* * *
+
+<h2>1. Manhattan or Brooklyn?</h2>
+
+There are five boroughs in New York: Manhattan, Brooklyn, Queens, Bronx, Staten Island. Overall speaking, Manhattan and Brooklyn have contributed nearly 90% of Airbnb listings in NYC.
+
+
+While most listings are located in Manhattan and Brooklyn, locations in Midtown and Downtown Manhattan are more expensive than others.(Refer to below Map for details.)
+
+![nyc_price1](https://github.com/tma995/tma995.github.io/raw/master/_posts/img/nyc_price1.png)
