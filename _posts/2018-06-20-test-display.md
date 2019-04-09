@@ -1,9 +1,9 @@
 ---
 layout: default
-title:  Test!
+title:  Welcome!
 ---
 
-Test Hello World!
+Hello World!
 
 Hello...
 你好。
