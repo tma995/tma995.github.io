@@ -5,7 +5,7 @@ title:  3 Tips of Booking NYC Airbnb Homes for Solo Adventurers
 
 {{ page.date | date: '%Y-%m-%d' }}: Data Science Blog Post written by Tianxiang Ma. First published on [Medium](https://medium.com/@tma995/3-tips-of-booking-nyc-airbnb-homes-for-solo-adventurers-10782392e12f).
 
-<h1>{{ page.title }}</h1>
+# {{ page.title }}
 
 ![nyc_map5](https://github.com/tma995/tma995.github.io/raw/master/_posts/img/nyc_map5.png)
 
@@ -21,11 +21,74 @@ However, too many choices could be a disaster sometimes. So today I will analyze
 
 * * *
 
-<h2>1. Manhattan or Brooklyn?</h2>
+## 1. Manhattan or Brooklyn?
 
 There are five boroughs in New York: Manhattan, Brooklyn, Queens, Bronx, Staten Island. Overall speaking, Manhattan and Brooklyn have contributed nearly 90% of Airbnb listings in NYC.
 
+![w0](https://github.com/tma995/tma995.github.io/raw/master/_posts/img/w0.png)
 
 While most listings are located in Manhattan and Brooklyn, locations in Midtown and Downtown Manhattan are more expensive than others.(Refer to below Map for details.)
 
 ![nyc_price1](https://github.com/tma995/tma995.github.io/raw/master/_posts/img/nyc_price1.png)
+
+Why Manhattan properties more expensive? Let dive deep into details.
+
+![w1](https://github.com/tma995/tma995.github.io/raw/master/_posts/img/w1.png)
+
+* Larger proportion of ‘Entire home/apt’ than other boroughs.
+* Less time to reach nearby point of interest. (i.e.: transit stop, subway station)
+* Higher chance of getting better amenities like GYM and Pool.
+
+In one word, Manhattan listings are **LUXURY**. At this point, if you want the best quality of living, Manhattan is your first choice.
+
+On the other hand, if you want the best on a budget, Customer Review Rating is a good reference. people often rate perfect score for those beyond their expectations.
+
+![w2](https://github.com/tma995/tma995.github.io/raw/master/_posts/img/w2.png)
+
+Surprisingly, top 10 neighborhoods of highest ratings all come from Brooklyn. In this case, Brooklyn areas, like Brooklyn Heights, Boerum Hill, Prospect Heights, could be a better choice for solo adventurers.
+
+* * *
+
+## 2. Book in advance but not too early.
+
+In fact, most Airbnb hosts are private owners, so it is understandable they may not have a fixed plan for far future.
+
+From calendar info recorded on 2019–03–06, we do see obvious drops of available listings count on 90 days and 180 days after, which implies owners’ behavior for updating their properties.
+
+![w3](https://github.com/tma995/tma995.github.io/raw/master/_posts/img/w3.png)
+
+If you are going to New York after more than three months later, do not bother booking an Airbnb too soon because many apartments are not ready for rent.
+
+However, it is also unwise to wait until last minute. If you are on a budget and plan to live outside Manhattan, 1–3 months ahead is a safe period which grant you better chance to get a decent bid.
+
+* * *
+
+## 3. How features affect pricing strategy?
+
+To answer this question, I build a predictive model for price. Refer to below plot to see important features.
+
+![w4](https://github.com/tma995/tma995.github.io/raw/master/_posts/img/w4.png)
+
+* **Room Type**: whether the given property is rent for entire home/apt brings largest difference on price;
+* **Location:** properties generally located in Manhattan or Williamsburg,Brooklyn will give positive effects on price, while outlying areas like Harlem and Washington Heights have negative effects on price;
+* **Facilities**: properties with more accommodates, bedrooms, bathrooms, with amenities like GYM, TV, Air Conditioning will charge you more;
+* **Customer Rating**: while not as much as above 3 factors, relatively low customer rating does give some negative force on price.
+
+To further interpret how different features give positive or negative force on predicting price, I picked one example below:
+
+![w5](https://github.com/tma995/tma995.github.io/raw/master/_posts/img/w5.png)
+
+* Positive force: Entire home/apt, Relatively high accomodates, Good location: Greenpoint Brooklyn, Perfect customer review score on location(10);
+* Negative force: Not located in Manhattan, Only one bedrooms, Without TV in the room;
+
+Based on forces from opposite directions, the predicted price comes to $133.75. This give us a guideline when stuck in a trade-off situation.
+
+* * *
+
+## Conclusion
+
+In this article, we looked into real Airbnb dataset and extract three tips for solo adventurers who plans to visit New York City.
+
+1. Go live in Manhattan and enjoy the metropolitan life if your wallet is full, otherwise try Brooklyn which may surprise you.
+2. Book in advance but not too early, 1–3 month ahead is a safe period for getting a decent bid.
+3. Listing price are mainly affected by room type, location, facilities, and customer ratings. Be clear of your personal preference is a wise move in making a final deal.
