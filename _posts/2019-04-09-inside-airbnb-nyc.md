@@ -3,7 +3,7 @@ layout: default
 title:  3 Tips of Booking NYC Airbnb Homes for Solo Adventurers
 ---
 
-{{ page.date | date: '%Y-%m-%d' }}
+{{ page.date | date: '%Y-%m-%d' }}: Data Science Blog Post written by Tianxiang Ma. First published on [Medium](https://medium.com/@tma995/3-tips-of-booking-nyc-airbnb-homes-for-solo-adventurers-10782392e12f).
 
 <h1>{{ page.title }}</h1>
 
