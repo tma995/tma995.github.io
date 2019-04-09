@@ -43,6 +43,19 @@ In one word, Manhattan listings are **LUXURY**. At this point, if you want the b
 
 On the other hand, if you want the best on a budget, Customer Review Rating is a good reference. people often rate perfect score for those beyond their expectations.
 
+|Rank	|neighbourhood_group_cleansed	|neighbourhood_cleansed	|average_rating|
+|:----|:----|:----|:----|
+|1	|Brooklyn	|Brooklyn Heights	|96.125000|
+|2	|Brooklyn	|Boerum Hill	|96.084416|
+|3	|Brooklyn	|Prospect Heights	|96.046358|
+|4	|Brooklyn	|Cobble Hill	|96.035294|
+|5	|Brooklyn	|Windsor Terrace	|95.838462|
+|6	|Brooklyn	|Fort Greene	|95.836461|
+|7	|Brooklyn	|South Slope	|95.768595|
+|8	|Brooklyn	|Bay Ridge	|95.586538|
+|9	|Brooklyn	|Greenpoint	|95.367561|
+|10 |Brooklyn	|Park Slope	|95.360190|
+
 ![w2](https://github.com/tma995/tma995.github.io/raw/master/_posts/img/w2.png)
 
 Surprisingly, top 10 neighborhoods of highest ratings all come from Brooklyn. In this case, Brooklyn areas, like Brooklyn Heights, Boerum Hill, Prospect Heights, could be a better choice for solo adventurers.
