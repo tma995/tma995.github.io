@@ -73,12 +73,37 @@ In conclusion, for the entire population, the target customer for this mail-orde
 
 XGBoost is selected as a solution for this supervised learning problems. The specialty xgboost differs from other gradient boosting algorithm is that xgboost used a more regularized model formalization to control over-fitting, which gives it better performance.
 
-Based on the limited understanding of data features, I tried to maintain as many features as possible in the training set, in order to preserve more underlying characteristics of original data. 
+Based on the limited understanding of data features, I engineered the data in a way that is slightly different from clustering purpose:
 
+* Maintain as many features as possible in the training set, in order to preserve more underlying characteristics of original data;
+* Left all NaN values along, because XGBoost is able to deal with missing values;
+* Did not scale the data, since XGBoost is a non-linear model;
+* Add extra features: By checking LNR column, we know people in both train and test set are included in CUSTOMERS dataset. In this case, `CUSTOMER_GROUP`, `ONLINE_PURCHASE`, `PRODUCT_GROUP` can be used in the predictive model.
 
+Then I split `MAILOUT_TRAIN` data into training and validation set, trained it with AUC score as evaluation metric and 50 as early stopping rounds.
+
+After training, model got a validation score of 0.76322 on the 48th iteration. Refer to below graph for most important features:
+
+![iacs_xgb1](https://github.com/tma995/tma995.github.io/raw/master/_posts/img/iacs_xgb1.png)
+
+It turns out that some undocumented feature are very important in the model, such as '`D19_SOZIALES`', '`ANZ_KINDER`', '`EXTSEL992`', and so on.
+
+The final prediction (response.csv) has received a score of 0.80762 on Kaggle’s Public Leaderboard, which ranked top 3 at the time of submission and very close to the Top Score 0.80819. 
+
+![iacs_xgb2](https://github.com/tma995/tma995.github.io/raw/master/_posts/img/iacs_xgb2.png)
 
 * * *
 
 ## 3. Conclusion
 
+In this project, demographics data of Germany was analyzed. Various Machine Learning techniques, in both Unsupervised Learning and Supervised Learning, were used to answer different questions. 
 
+While undertaking the research work, I did learn a lot not only in manipulating ML techniques, but also in finding insights of real-life business from unfamiliar domains. I would like to thank Udacity and Arvato Financial Services for setting this up.
+
+Even though the score looks ok on Kaggle’s Public Leaderboard, there is still a lot to be improved:
+
+* Feature Engineering: Better understanding of data will definitely help in feature selection, and additional features extracted from outside resources for Germany population may improve clustering and prediction;
+* Other algorithms: lightgbm, catboost, and many more algorithms can be put into experiment in this project;
+* Fusion Model: for the time reason, I only trained one model in this project. However, Fusion Model is a necessary part in predictive problems. By combining multiple model which trained in different scheme, will probably further push the score to another level.
+
+In the end, I would like to thank Udacity and Arvato Financial Services for setting all this up.
