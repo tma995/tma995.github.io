@@ -7,15 +7,17 @@ title:  Customer Segmentation Report for Arvato Financial Services
 
 # {{ page.title }}
 
+![iacs_head1](https://github.com/tma995/tma995.github.io/raw/master/_posts/img/iacs_head1.png)
+
 ## 1. Introduction
 
 In this project, a mail-order sales company in Germany is interested in identifying segments of the general population to target with their marketing in order to grow. The objective is to describe the core customer base of the company, and to identify which individuals are most likely to respond to the campaign.
 
 ### Data Sets
-* AZDIAS: Demographics data for the general population of Germany; (891,211 x 366).
-* CUSTOMERS: Demographics data for customers of a mail-order company; (191,652 x 369).
-* MAILOUT_TRAIN: Demographics data for individuals who were targets of a marketing campaign; (42,982 x 367).
-* MAILOUT_TEST: Demographics data for individuals who were targets of a marketing campaign; (42,833 x 366).
+* `AZDIAS`: Demographics data for the general population of Germany; (891,211 x 366).
+* `CUSTOMERS`: Demographics data for customers of a mail-order company; (191,652 x 369).
+* `MAILOUT_TRAIN`: Demographics data for individuals who were targets of a marketing campaign; (42,982 x 367).
+* `MAILOUT_TEST`: Demographics data for individuals who were targets of a marketing campaign; (42,833 x 366).
 
 ### Problem Statement
 * Analyze demographics data (provided by Arvato Financial Solutions, a Bertelsmann subsidiary) for customers of a mail-order sales company in Germany, comparing it against demographics information for the general population. 
@@ -28,7 +30,11 @@ In this project, a mail-order sales company in Germany is interested in identify
 
 ### Data Pre-processing
 
-The largest challenge for me is Data Understanding. There are hundreds of variables, but not all of them are documented. So I did a thorough study of all reference I can get to and engineered all features into a synthetic data dictionary with some manual work on data types. It ensures me on complete following project.
+##### Building Data Dictionary
+
+The largest challenge at first is Data Understanding. There are hundreds of variables, but not all of them are documented. So I did a thorough study of all reference I can get to and engineered all features into a synthetic data dictionary with some manual work on data types. 
+
+All features in `AZDIAS` need to be documented, as well their data types and 'missing or unknown' values. Some require manual work based on references and guessing. The dictionary is composed from following parts:
 
 |Building Blocks|Comments|
 |:----------|:----------|
@@ -36,6 +42,26 @@ The largest challenge for me is Data Understanding. There are hundreds of variab
 |Part2|`DIAS Attributes - Values 2017.xlsx` features that have specific Null values|
 |Part3|`DIAS Attributes - Values 2017.xlsx` features without specific Null values|
 |Part4|features in dataset but undocumented|
+
+The synthetic data dictionary looks like below:
+
+![iacs_pre1](https://github.com/tma995/tma995.github.io/raw/master/_posts/img/iacs_pre1.png)
+
+##### Accessing Null Values
+
+![iacs_pre2](https://github.com/tma995/tma995.github.io/raw/master/_posts/img/iacs_pre2.png)
+
+* Replace '`missing or unknown`' values into `np.nan` in dataset referring to above dictionary;
+* Drop columns with `NaN` value rate greater than **30%**;
+* Drop rows with more than **20** `NaN` values;
+
+##### Feature Engineering
+![iacs_pre3](https://github.com/tma995/tma995.github.io/raw/master/_posts/img/iacs_pre3.png)
+
+* There is one feature (shown above) that is neither categorical nor numerical: **`CAMEO_INTL_2015`**, which can be divided into two ordinal features, wealthy level and age level.
+* One-Hot Encoding for categorical features; (No ordering relations)
+* Fill Null values: replace remain null cells with the most frequent value in each column; (PCA and K-Means not able to deal with NaN values)
+* Scale the dataset by StandardScaler() from scikit-learn package; (K-means assumes spherical shapes of clusters)
 
 * * *
 
@@ -64,12 +90,13 @@ Since Cluster 6 is most affected by the first 4 PCA features, let’s look insid
 
 ![iacs_kmeans4](https://github.com/tma995/tma995.github.io/raw/master/_posts/img/iacs_kmeans4.png)
 
-Following are the observation for each PCA feature:
+> 1st: Low-income, High mobility, areas with more family houses or business buildings; (should be interpreted on reverse meaning due to negative coefficients {-6.17289942})
 
-1st: Low-income, High mobility, areas with more family houses or business buildings; (should be interpreted on reverse meaning due to negative coefficients {-6.17289942})
-2nd: Cars: Upper-class, German, Fast, Sports; 
-3rd: Not young, relatively wealthy, Interested in advertising and will to shop online; 
-4th: Many online transactions, Not single, Has big family; 
+> 2nd: Cars: Upper-class, German, Fast, Sports; 
+
+> 3rd: Not young, relatively wealthy, Interested in advertising and will to shop online; 
+
+> 4th: Many online transactions, Not single, Has big family; 
 
 In conclusion, for the entire population, the target customer for this mail-order company is most likely to be:
 * Life Stage: in the middle age and has big family;
