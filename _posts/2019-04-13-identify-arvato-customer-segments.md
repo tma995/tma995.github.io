@@ -28,6 +28,15 @@ In this project, a mail-order sales company in Germany is interested in identify
 
 ### Data Pre-processing
 
+The largest challenge for me is Data Understanding. There are hundreds of variables, but not all of them are documented. So I did a thorough study of all reference I can get to and engineered all features into a synthetic data dictionary with some manual work on data types. It ensures me on complete following project.
+
+|Building Blocks|Comments|
+|:----------|:----------|
+|Part1|features from AZDIAS_Feature_Summary.csv|
+|Part2|`DIAS Attributes - Values 2017.xlsx` features that have specific Null values|
+|Part3|`DIAS Attributes - Values 2017.xlsx` features without specific Null values|
+|Part4|features in dataset but undocumented|
+
 * * *
 
 ### Customer Segmentation
@@ -69,7 +78,7 @@ In conclusion, for the entire population, the target customer for this mail-orde
 
 * * *
 
-### Prediction Model
+### Predict Customer Responses
 
 XGBoost is selected as a solution for this supervised learning problems. The specialty xgboost differs from other gradient boosting algorithm is that xgboost used a more regularized model formalization to control over-fitting, which gives it better performance.
 
