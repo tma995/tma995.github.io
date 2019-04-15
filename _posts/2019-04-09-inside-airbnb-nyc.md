@@ -21,7 +21,7 @@ However, too many choices could be a disaster sometimes. So today I will analyze
 
 There are five boroughs in New York: Manhattan, Brooklyn, Queens, Bronx, Staten Island. Overall speaking, Manhattan and Brooklyn have contributed nearly 90% of Airbnb listings in NYC.
 
-![w0](https://github.com/tma995/tma995.github.io/raw/master/_posts/img/w0.png)
+<div align=center>![w0](https://github.com/tma995/tma995.github.io/raw/master/_posts/img/w0.png)
 
 While most listings are located in Manhattan and Brooklyn, locations in Midtown and Downtown Manhattan are more expensive than others.(Refer to below Map for details.)
 
