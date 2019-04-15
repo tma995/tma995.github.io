@@ -15,12 +15,10 @@ theme_settings:
 
   # Header and footer text
   header_text: >
-     <h1>Tim's Blog</h1>
-
      <p>Welcome to Tianxiang Ma's GitHub Pages.</p>
   header_text_feature_image: 
   footer_text: >
-   Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/rohanchandra/type-theme">Type Theme</a>
+   Copyright <a href="https://github.com/tma995/tma995.github.io">2018</a>
 
   # Icons
   rss: false
