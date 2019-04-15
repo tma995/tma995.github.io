@@ -3,7 +3,7 @@ layout: post
 title:  Welcome!
 ---
 
-Hello World!
+Hello World!<!-- more -->
 
 Hello...
 你好。
