@@ -33,7 +33,7 @@ The largest challenge at first is Data Understanding. There are hundreds of vari
 All features in `AZDIAS` need to be documented, as well their data types and 'missing or unknown' values. Some require manual work based on references and guessing. The dictionary is composed from following parts:
 
 |Building Blocks|Comments|
-|:----------|:----------|
+|:----|:----------|
 |Part1|features from AZDIAS_Feature_Summary.csv|
 |Part2|`DIAS Attributes - Values 2017.xlsx` features that have specific Null values|
 |Part3|`DIAS Attributes - Values 2017.xlsx` features without specific Null values|
@@ -86,10 +86,10 @@ Since Cluster 6 is most affected by the first 4 PCA features, let’s look insid
 
 ![iacs_kmeans4](https://github.com/tma995/tma995.github.io/raw/master/_posts/img/iacs_kmeans4.png)
 
->* 1st: Low-income, High mobility, areas with more family houses or business buildings; (should be interpreted on reverse meaning due to negative coefficients {-6.17289942})
->* 2nd: Cars: Upper-class, German, Fast, Sports; 
->* 3rd: Not young, relatively wealthy, Interested in advertising and will to shop online; 
->* 4th: Many online transactions, Not single, Has big family; 
+> 1st: Low-income, High mobility, areas with more family houses or business buildings; (should be interpreted on reverse meaning due to negative coefficients {-6.17289942})  
+2nd: Cars: Upper-class, German, Fast, Sports;   
+3rd: Not young, relatively wealthy, Interested in advertising and will to shop online;   
+4th: Many online transactions, Not single, Has big family; 
 
 In conclusion, for the entire population, the target customer for this mail-order company is most likely to be:
 * Life Stage: in the middle age and has big family;
