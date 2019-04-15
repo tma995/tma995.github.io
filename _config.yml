@@ -2,6 +2,8 @@
 baseurl: ""
 url: "https://tma995.github.io/"
 
+excerpt_separator: "<!-- more -->"
+
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
   # Meta

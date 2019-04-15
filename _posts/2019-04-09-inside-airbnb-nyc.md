@@ -5,7 +5,7 @@ title:  3 Tips of Booking NYC Airbnb Homes for Solo Adventurers
 
 ![nyc_map5](https://github.com/tma995/tma995.github.io/raw/master/_posts/img/nyc_map5.png)
 
-For those who love traveling around the world and exploring new things, New York City should be, without doubt, among the top lines in your to-do list. You will find tons of fun and countless surprises in this famous metropolitan city once you get there.
+For those who love traveling around the world and exploring new things, New York City should be, without doubt, among the top lines in your to-do list. You will find tons of fun and countless surprises in this famous metropolitan city once you get there.<!-- more -->
 
 A living place is always the first thing to worry about when planing. Luckily we can turn to Airbnb for help. It provides us a large diversity of locations, room types and prices, chances to live with local host and then enjoy local life.
 
