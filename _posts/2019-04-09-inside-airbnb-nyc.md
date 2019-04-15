@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  3 Tips of Booking NYC Airbnb Homes for Solo Adventurers
 ---
 

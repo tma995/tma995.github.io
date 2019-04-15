@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  Customer Segmentation Report for Arvato Financial Services
 ---
 
