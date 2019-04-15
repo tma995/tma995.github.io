@@ -7,7 +7,7 @@ title:  Customer Segmentation Report for Arvato Financial Services
 
 ## 1. Introduction
 
-In this project, a mail-order sales company in Germany is interested in identifying segments of the general population to target with their marketing in order to grow. The objective is to describe the core customer base of the company, and to identify which individuals are most likely to respond to the campaign.
+In this project, a mail-order sales company in Germany is interested in identifying segments of the general population to target with their marketing in order to grow. The objective is to describe the core customer base of the company, and to identify which individuals are most likely to respond to the campaign.<!-- more -->
 
 ### Data Sets
 * `AZDIAS`: Demographics data for the general population of Germany; (891,211 x 366).
