@@ -3,10 +3,6 @@ layout: post
 title:  Customer Segmentation Report for Arvato Financial Services
 ---
 
-{{ page.date | date: '%Y-%m-%d' }}: Capstone project for Udacity Data Nanodegree Program, which is also a [Kaggle competition](http://www.kaggle.com/t/21e6d45d4c574c7fa2d868f0e8c83140). 
-
-# {{ page.title }}
-
 ![iacs_head1](https://github.com/tma995/tma995.github.io/raw/master/_posts/img/iacs_head1.png)
 
 ## 1. Introduction
@@ -140,3 +136,8 @@ Even though the score looks ok on Kaggle’s Public Leaderboard, there is still 
 * Fusion Model: for the time reason, I only trained one model in this project. However, Fusion Model is a necessary part in predictive problems. By combining multiple model which trained in different scheme, will probably further push the score to another level.
 
 In the end, I would like to thank Udacity and Arvato Financial Services for setting all this up.
+
+* * *
+
+{{ page.date | date: '%Y-%m-%d' }}: Capstone project for Udacity Data Nanodegree Program, which is also a [Kaggle competition](http://www.kaggle.com/t/21e6d45d4c574c7fa2d868f0e8c83140). The article is also published on [Medium](https://medium.com/@tma995/customer-segmentation-report-for-arvato-financial-services-d1f3a7bf5fb2).
+

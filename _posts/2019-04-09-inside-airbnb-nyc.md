@@ -3,10 +3,6 @@ layout: post
 title:  3 Tips of Booking NYC Airbnb Homes for Solo Adventurers
 ---
 
-{{ page.date | date: '%Y-%m-%d' }}: Data Science Blog Post written by Tianxiang Ma. First published on [Medium](https://medium.com/@tma995/3-tips-of-booking-nyc-airbnb-homes-for-solo-adventurers-10782392e12f).
-
-# {{ page.title }}
-
 ![nyc_map5](https://github.com/tma995/tma995.github.io/raw/master/_posts/img/nyc_map5.png)
 
 For those who love traveling around the world and exploring new things, New York City should be, without doubt, among the top lines in your to-do list. You will find tons of fun and countless surprises in this famous metropolitan city once you get there.
@@ -103,3 +99,8 @@ In this article, we looked into real Airbnb dataset and extract three tips for s
 1. Go live in Manhattan and enjoy the metropolitan life if your wallet is full, otherwise try Brooklyn which may surprise you.
 2. Book in advance but not too early, 1–3 month ahead is a safe period for getting a decent bid.
 3. Listing price are mainly affected by room type, location, facilities, and customer ratings. Be clear of your personal preference is a wise move in making a final deal.
+
+* * * 
+
+{{ page.date | date: '%Y-%m-%d' }}: Data Science Blog Post written by Tianxiang Ma. First published on [Medium](https://medium.com/@tma995/3-tips-of-booking-nyc-airbnb-homes-for-solo-adventurers-10782392e12f).
+
